@@ -1,0 +1,29 @@
+{
+  "name": "iskr_maintenance",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx mix",
+    "prod": "npx mix --production",
+    "watch": "npx mix watch"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.49",
+    "lodash": "^4.17.21",
+    "mix-tailwindcss": "^1.3.0",
+    "postcss": "^8.4.21",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.58.3",
+    "sass-loader": "^13.2.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.5",
+    "webpack": "^5.76.0"
+  },
+  "dependencies": {
+    "@gov-design-system-ce/components": "^4.0.4",
+    "@gov-design-system-ce/fonts": "^0.0.2",
+    "@gov-design-system-ce/icons": "^0.0.12",
+    "@gov-design-system-ce/styles": "^4.0.0",
+    "tailwindcss": "^3.4.1"
+  }
+}

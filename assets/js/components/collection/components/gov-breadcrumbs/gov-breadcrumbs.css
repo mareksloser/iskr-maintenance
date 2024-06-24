@@ -1,0 +1,321 @@
+.gov-breadcrumbs ul {
+  margin: 0;
+  padding: 0;
+}
+
+.gov-breadcrumbs li {
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+.gov-breadcrumbs li::before {
+  display: none;
+}
+
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* [Core] - Buttons
+------------------------------------------------------------------ */
+/*
+ * Gets color from theme-colors or from palette-colors
+ */
+/*
+ * Converts hex value to rgb colors value
+ */
+/* stylelint-disable order/order */
+/* stylelint-enable order/order */
+/*
+ * Generates list of utility classes for margin, padding
+ *
+ * Make sure $list of definitions is sorted so that last item is defined last
+ * So largest views are mentioned last.
+ */
+/*
+ -  Variables - Sizes
+ */
+/* "Constants" for general usage */
+/*
+ -  Variables - Layout
+ */
+/**
+* Utilities - Offset
+*/
+/* stylelint-disable order/order */
+/* stylelint-enable order/order */
+/* stylelint-disable order/order */
+/* stylelint-enable order/order */
+/* stylelint-disable order/order */
+/* stylelint-enable order/order */
+/**
+* Generates CSS3 var with button value
+*/
+/*
+ -  Variables - General
+ */
+/*
+ -  Variables - Typography
+ */
+/*
+ -  Variables - Variants
+ */
+/*
+ -  Variables - Container
+ */
+/*
+ -  Variables - Sizes
+ */
+/* "Constants" for general usage */
+/*
+ -  Variables - Accordion
+ */
+/*
+ -  Variables - Attachments
+ */
+/*
+ -  Variables - Infobar
+ */
+/*
+ -  Variables - Backdrop
+ */
+/*
+ -  Variables - Buttons (&& Chips)
+ */
+/*
+ -  Variables - Breadcrumbs
+ */
+/*
+ -  Variables - Classes
+ */
+/*
+ -  Variables - Colors
+ */
+/*
+ -	Variables - Control Group
+ */
+/*
+ -  Variables - Cookiebar
+ */
+/*
+ -  Variables - Dropdown
+ */
+/*
+ -  Variables - Card
+ */
+/*
+ -  Variables - Message
+ */
+/*
+ -  Variables - Empty
+ */
+/*
+ -  Variables - Error code
+ */
+/*
+ -  Variables - Grid
+ */
+/*
+ -  Variables - Tiles
+ */
+/*
+ -  Variables - Modal & Prompt
+ */
+/**
+* Utilities - Offset
+*/
+/*
+ -  Variables - shadows
+ */
+/* "Constants" for general usage */
+/*
+ -  Variables - Statsbar
+ */
+/*
+ -  Variables - Tabs
+ */
+/*
+ -  Variables - Tooltip
+ */
+/*
+ -  Variables - Loading
+ */
+/*
+ -	Variables - Forms
+ */
+/*
+ -  Variables - Form Autocomplete
+ */
+/*
+ -  Variables - Form Message
+ */
+/*
+ -	Variables - Form label
+ */
+/*
+ -	Variables - Form switch
+ */
+/*
+ -	Variables - Form select
+ */
+/*
+ -	Variables - Form input
+ */
+/*
+ -	Variables - Form multiselect
+ */
+/*
+ -	Variables - Form password power
+ */
+/*
+ -	Variables - Form checkbox & radio
+ */
+/*
+ -  Variables - Form group
+ */
+/*
+ -	Variables - Form file
+ */
+/*
+ -  Variables - Toast Message
+ */
+/*
+ -  Variables - Wizard
+ */
+/*
+ -  Variables - Stepper
+ */
+/*
+ -  Variables - Side nav
+ */
+/*
+ -  Variables - Grid & Tile
+ */
+/*
+ -  Variables - Pagination
+ */
+/*
+ -  Variables - Nav
+ */
+/*
+ -  Variables - Layout
+ */
+/*
+ -  Variables - Tag
+ */
+.gov-spin-animation,
+.gov-pseudo-spin-animation::before {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes countdown {
+  to {
+    transform: scaleX(0);
+  }
+}
+@keyframes progress {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*
+*   Pagination
+*/
+.gov-breadcrumbs {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--gov-breadcrumbs-gap, 1rem);
+}
+.gov-breadcrumbs nav {
+  overflow: hidden;
+  width: 100%;
+}
+.gov-breadcrumbs ul {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 0;
+}
+.gov-breadcrumbs li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 0 !important;
+}
+.gov-breadcrumbs li .gov-icon {
+  flex: 0 0 auto;
+  width: var(--gov-breadcrumbs-icon-size, 0.625rem);
+  height: var(--gov-breadcrumbs-icon-size, 0.625rem);
+  margin: calc((24px - var(--gov-breadcrumbs-icon-size, 0.625rem)) / 2) var(--gov-breadcrumbs-gap, 1rem) 0;
+  color: var(--gov-breadcrumbs-arrow-color, var(--gov-color-secondary-600));
+}
+.gov-breadcrumbs li > a:first-child,
+.gov-breadcrumbs li > button:first-child {
+  margin-left: calc(var(--gov-breadcrumbs-icon-size, 0.625rem) + 2 * var(--gov-breadcrumbs-gap, 1rem));
+}
+.gov-breadcrumbs a {
+  font-weight: var(--text-font-weight, var(--gov-text-m-font-weight));
+  font-size: var(--text-font-size, var(--gov-text-m-font-size));
+  line-height: var(--text-line-height, var(--gov-text-m-line-height));
+  letter-spacing: var(--text-letter-spacing, var(--gov-text-m-letter-spacing));
+  color: var(--gov-breadcrumbs-link-color, var(--gov-color-primary));
+}
+.gov-breadcrumbs button {
+  font-weight: var(--text-font-weight, var(--gov-text-m-font-weight));
+  font-size: var(--text-font-size, var(--gov-text-m-font-size));
+  line-height: var(--text-line-height, var(--gov-text-m-line-height));
+  letter-spacing: var(--text-letter-spacing, var(--gov-text-m-letter-spacing));
+  color: var(--gov-breadcrumbs-link-color, var(--gov-color-primary));
+  padding: 0;
+  border: none;
+  background: none;
+  text-decoration: underline;
+}
+.gov-breadcrumbs[collapsed=""], .gov-breadcrumbs[collapsed=true i], .gov-breadcrumbs[collapsed="1"] {
+  align-items: center;
+}
+.gov-breadcrumbs[collapsed=""] ul, .gov-breadcrumbs[collapsed=true i] ul, .gov-breadcrumbs[collapsed="1"] ul {
+  overflow-x: hidden;
+  flex-direction: row;
+}
+.gov-breadcrumbs[collapsed=""] li, .gov-breadcrumbs[collapsed=true i] li, .gov-breadcrumbs[collapsed="1"] li {
+  align-items: center;
+  white-space: nowrap;
+}
+.gov-breadcrumbs[collapsed=""] li .gov-icon, .gov-breadcrumbs[collapsed=true i] li .gov-icon, .gov-breadcrumbs[collapsed="1"] li .gov-icon {
+  margin-top: 0;
+}
+.gov-breadcrumbs[collapsed=""] li > a:first-child,
+.gov-breadcrumbs[collapsed=""] li > button:first-child, .gov-breadcrumbs[collapsed=true i] li > a:first-child,
+.gov-breadcrumbs[collapsed=true i] li > button:first-child, .gov-breadcrumbs[collapsed="1"] li > a:first-child,
+.gov-breadcrumbs[collapsed="1"] li > button:first-child {
+  margin-left: 0;
+}

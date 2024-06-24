@@ -1,0 +1,42 @@
+.extend-gov-text--4xl {
+  font-weight: var(--gov-text-4xl-font-weight);
+  font-size: var(--gov-text-4xl-font-size);
+  line-height: var(--gov-text-4xl-line-height);
+  letter-spacing: var(--gov-text-4xl-letter-spacing);
+}
+
+.extend-gov-text--2xl {
+  font-weight: var(--gov-text-2xl-font-weight);
+  font-size: var(--gov-text-2xl-font-size);
+  line-height: var(--gov-text-2xl-line-height);
+  letter-spacing: var(--gov-text-2xl-letter-spacing);
+
+}
+
+.extend-gov-text--l {
+  font-weight: var(--gov-text-l-font-weight);
+  font-size: var(--gov-text-l-font-size);
+  line-height: var(--gov-text-l-line-height);
+  letter-spacing: var(--gov-text-l-letter-spacing);
+}
+
+.node :not(.not-node-ritch-text) {
+
+  ul {
+    @apply ml-4 mb-6;
+
+    li {
+      @apply relative  mb-2;
+
+      &:before {
+        @apply absolute block bg-primary rounded-full;
+        content: "";
+
+        top: .625rem;
+        left: -.875rem;
+        width: .3125rem;
+        height: .3125rem;
+      }
+    }
+  }
+}

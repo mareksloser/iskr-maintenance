@@ -1,0 +1,132 @@
+@layer base {
+  :root {
+    //--screen-mobile-width: #{$screen-mobile-width};
+    //--screen-tablet-width: #{$screen-tablet-width};
+    //--screen-desktop-width: #{$screen-desktop-width};
+    //--screen-wide-width: #{$screen-wide-width};
+
+    --gov-container-width: #{$container-width};
+    --gov-layout-content-width: #{$layout-content-width};
+    --gov-container-padding-mobile: #{$container-padding-mobile};
+
+    --gov-layout-gap: #{$layout-gap};
+
+    --gov-breadcrumbs-arrow-color: #{$breadcrumbs-arrow-color};
+
+    --gov-color-primary: #{$color-primary};
+    --gov-color-primary-100: #{$color-primary-100};
+    --gov-color-primary-200: #{$color-primary-200};
+    --gov-color-primary-300: #{$color-primary-300};
+    --gov-color-primary-400: #{$color-primary-400};
+    --gov-color-primary-500: #{$color-primary-500};
+    --gov-color-primary-600: #{$color-primary-600};
+    --gov-color-primary-700: #{$color-primary-700};
+    --gov-color-primary-800: #{$color-primary-800};
+    --gov-color-primary-900: #{$color-primary-900};
+
+    --gov-color-secondary: #{$color-secondary};
+    --gov-color-secondary-100: #{$color-secondary-100};
+    --gov-color-secondary-200: #{$color-secondary-200};
+    --gov-color-secondary-300: #{$color-secondary-300};
+    --gov-color-secondary-400: #{$color-secondary-400};
+    --gov-color-secondary-500: #{$color-secondary-500};
+    --gov-color-secondary-600: #{$color-secondary-600};
+    --gov-color-secondary-700: #{$color-secondary-700};
+    --gov-color-secondary-800: #{$color-secondary-800};
+    --gov-color-secondary-900: #{$color-secondary-900};
+
+    --gov-color-success: #{$color-success};
+    --gov-color-success-100: #{$color-success-100};
+    --gov-color-success-200: #{$color-success-200};
+    --gov-color-success-300: #{$color-success-300};
+    --gov-color-success-400: #{$color-success-400};
+    --gov-color-success-500: #{$color-success-500};
+    --gov-color-success-600: #{$color-success-600};
+    --gov-color-success-700: #{$color-success-700};
+
+    --gov-color-warning: #{$color-warning};
+    --gov-color-warning-100: #{$color-warning-100};
+    --gov-color-warning-200: #{$color-warning-200};
+    --gov-color-warning-300: #{$color-warning-300};
+    --gov-color-warning-400: #{$color-warning-400};
+    --gov-color-warning-500: #{$color-warning-500};
+    --gov-color-warning-600: #{$color-warning-600};
+    --gov-color-warning-700: #{$color-warning-700};
+
+    --gov-color-error: #{$color-error};
+    --gov-color-error-100: #{$color-error-100};
+    --gov-color-error-200: #{$color-error-200};
+    --gov-color-error-300: #{$color-error-300};
+    --gov-color-error-400: #{$color-error-400};
+    --gov-color-error-500: #{$color-error-500};
+    --gov-color-error-600: #{$color-error-600};
+
+    --gov-color-neutral-black: #{$color-neutral-black};
+    --gov-color-neutral-white: #{$color-neutral-white};
+
+    // Fonts
+
+    --gov-text-xs-font-size: #{$text-xs-font-size};
+    --gov-text-xs-line-height: #{$text-xs-line-height};
+    --gov-text-xs-font-weight: #{$text-xs-font-weight};
+    --gov-text-xs-letter-spacing: #{$text-xs-letter-spacing};
+    --gov-text-xs-margin-bottom: #{$text-xs-margin-bottom};
+
+    --gov-text-s-font-size: #{$text-s-font-size};
+    --gov-text-s-line-height: #{$text-s-line-height};
+    --gov-text-s-font-weight: #{$text-s-font-weight};
+    --gov-text-s-letter-spacing: #{$text-s-letter-spacing};
+    --gov-text-s-margin-bottom: #{$text-s-margin-bottom};
+
+    --gov-text-m-font-size: #{$text-m-font-size};
+    --gov-text-m-line-height: #{$text-m-line-height};
+    --gov-text-m-font-weight: #{$text-m-font-weight};
+    --gov-text-m-letter-spacing: #{$text-m-letter-spacing};
+    --gov-text-m-margin-bottom: #{$text-m-margin-bottom};
+
+    --gov-text-l-font-size: #{$text-l-font-size};
+    --gov-text-l-line-height: #{$text-l-line-height};
+    --gov-text-l-font-weight: #{$text-l-font-weight};
+    --gov-text-l-letter-spacing: #{$text-l-letter-spacing};
+    --gov-text-l-margin-bottom: #{$text-l-margin-bottom};
+
+    --gov-text-xl-font-size: #{$text-xl-font-size};
+    --gov-text-xl-line-height: #{$text-xl-line-height};
+    --gov-text-xl-font-weight: #{$text-xl-font-weight};
+    --gov-text-xl-letter-spacing: #{$text-xl-letter-spacing};
+    --gov-text-xl-margin-top: #{$text-xl-margin-top};
+    --gov-text-xl-margin-bottom: #{$text-xl-margin-bottom};
+
+    --gov-text-2xl-font-size: #{$text-2xl-font-size};
+    --gov-text-2xl-line-height: #{$text-2xl-line-height};
+    --gov-text-2xl-font-weight: #{$text-2xl-font-weight};
+    --gov-text-2xl-letter-spacing: #{$text-2xl-letter-spacing};
+    --gov-text-2xl-margin-top: #{$text-2xl-margin-top};
+    --gov-text-2xl-margin-bottom: #{$text-2xl-margin-bottom};
+
+    --gov-text-3xl-font-size: #{$text-3xl-font-size};
+    --gov-text-3xl-line-height: #{$text-3xl-line-height};
+    --gov-text-3xl-font-weight: #{$text-3xl-font-weight};
+    --gov-text-3xl-margin-top: #{$text-3xl-margin-top};
+    --gov-text-3xl-margin-bottom: #{$text-3xl-margin-bottom};
+
+    --gov-text-4xl-font-size: #{$text-4xl-font-size};
+    --gov-text-4xl-line-height: #{$text-4xl-line-height};
+    --gov-text-4xl-font-weight: #{$text-4xl-font-weight};
+    --gov-text-4xl-letter-spacing: #{$text-4xl-letter-spacing};
+    --gov-text-4xl-margin-top: #{$text-4xl-margin-top};
+    --gov-text-4xl-margin-bottom: #{$text-4xl-margin-bottom};
+
+    --gov-text-5xl-font-size: #{$text-5xl-font-size};
+    --gov-text-5xl-line-height: #{$text-5xl-line-height};
+    --gov-text-5xl-font-weight: #{$text-5xl-font-weight};
+    --gov-text-5xl-margin-top: #{$text-5xl-margin-top};
+    --gov-text-5xl-margin-bottom: #{$text-5xl-margin-bottom};
+
+    --gov-text-6xl-font-size: #{$text-6xl-font-size};
+    --gov-text-6xl-line-height: #{$text-6xl-line-height};
+    --gov-text-6xl-font-weight: #{$text-6xl-font-weight};
+    --gov-text-6xl-margin-top: #{$text-6xl-margin-top};
+    --gov-text-6xl-margin-bottom: #{$text-6xl-margin-bottom};
+  }
+}

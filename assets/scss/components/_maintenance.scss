@@ -1,0 +1,26 @@
+$class: '.maintenance';
+
+#{$class} {
+  @apply bg-primary text-neutral-white p-6 pt-16 pb-12 md:p-16 md:pt-[100px];
+
+  &__content {
+    @apply flex flex-col justify-center items-center;
+  }
+
+  &__settings_ico {
+    @apply pb-10;
+  }
+
+  &__title {
+    @apply pb-6 text-center;
+  }
+
+  &__message {
+    @apply text-primary-300 text-center max-w-[680px];
+  }
+
+  &__logo {
+    @apply pt-[150px] md:pt-[180px]
+  }
+}
+
