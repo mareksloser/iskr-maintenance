@@ -20,7 +20,11 @@ $class: '.maintenance';
   }
 
   &__logo {
-    @apply pt-[150px] md:pt-[180px]
+    @apply pt-[150px] md:pt-[180px];
+
+    img {
+      @apply w-[200px] md:w-[230px];
+    }
   }
 }
 
